@@ -25,7 +25,7 @@ const fallbackMachinery = [
   { _id: 'm7', name: 'Tractor Mounted Boom Sprayer', type: 'Sprayer', price: 55000, description: 'Efficient boom sprayer for applying pesticides, herbicides, and fertilizers uniformly across large fields.', features: ['400L Tank Capacity', '12m Boom Length', 'High Pressure Pump', 'Anti-Drip Nozzles', 'Corrosion Resistant Tank'], imageKey: 'boom_sprayer', compatibility: '35 HP and above', weight: '150 kg', inStock: true }
 ];
 
-const API = 'http://localhost:5000/api';
+const API = 'https://krishi-krisha-dealership.onrender.com/api';
 
 export function AppProvider({ children }) {
   const [tractors, setTractors] = useState([]);
