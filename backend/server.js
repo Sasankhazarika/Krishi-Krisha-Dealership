@@ -72,7 +72,9 @@ app.post('/api/upload', upload.single('idProof'), (req, res) => {
 app.get('/api/health', (req, res) => {
   res.json({ status: 'OK', timestamp: new Date().toISOString() });
 });
-
+app.get("/", (req, res) => {
+  res.send("Krisha Krishi Agro API is running 🚀");
+});
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`🚀 Krisha Krishi Agro Backend running on http://localhost:${PORT}`);
